@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>615</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>880</width>
+    <height>615</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="gridFrame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>861</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" columnstretch="1,2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>20</number>
+     </property>
+     <property name="topMargin">
+      <number>20</number>
+     </property>
+     <property name="rightMargin">
+      <number>20</number>
+     </property>
+     <property name="bottomMargin">
+      <number>20</number>
+     </property>
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item row="0" column="0">
+      <layout class="QFormLayout" name="formLayout">
+       <property name="horizontalSpacing">
+        <number>2</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>20</number>
+       </property>
+       <property name="bottomMargin">
+        <number>50</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="TitleLabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&amp;Title*:</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::PlainText</enum>
+         </property>
+         <property name="buddy">
+          <cstring>TitleLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="TitleLineEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>210</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="DateLabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&amp;Date:</string>
+         </property>
+         <property name="buddy">
+          <cstring>DateEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDateEdit" name="DateEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>210</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="displayFormat">
+          <string>dd-MMM-yyyy</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="CurrencyLabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&amp;Currency*:</string>
+         </property>
+         <property name="buddy">
+          <cstring>CurrencyLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="CurrencyLineEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>210</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="AmountLabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&amp;Amount*:</string>
+         </property>
+         <property name="buddy">
+          <cstring>AmountLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="AmountLineEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>210</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="PaymentModeLabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&amp;Mode of Payment*:</string>
+         </property>
+         <property name="buddy">
+          <cstring>PaymentModeLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="PaymentModeLineEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>210</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="DescriptionLabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>D&amp;escription:</string>
+           </property>
+           <property name="buddy">
+            <cstring>DescriptionPlainTextEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPlainTextEdit" name="DescriptionPlainTextEdit">
+         <property name="minimumSize">
+          <size>
+           <width>210</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="tabChangesFocus">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ResetPushButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>75</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Reset</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="SubmitPushButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>75</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <underline>false</underline>
+            </font>
+           </property>
+           <property name="text">
+            <string>&amp;Submit</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QTableView" name="DatabaseTableView">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAsNeeded</enum>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="PlotWidget" name="graphWidget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>880</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <widget class="QMenu" name="ExtraMenu">
+    <property name="title">
+     <string>E&amp;xtras</string>
+    </property>
+    <addaction name="ExportToCsv_action"/>
+    <addaction name="ImportFromCsv_action"/>
+    <addaction name="separator"/>
+    <addaction name="Refresh_action"/>
+    <addaction name="separator"/>
+    <addaction name="DeleteRecords_action"/>
+   </widget>
+   <addaction name="ExtraMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExport_to_Excel">
+   <property name="text">
+    <string>Export to Excel...</string>
+   </property>
+  </action>
+  <action name="actionImport_from_Excel">
+   <property name="text">
+    <string>Import from Excel</string>
+   </property>
+  </action>
+  <action name="ExportToCsv_action">
+   <property name="text">
+    <string>Export to .csv</string>
+   </property>
+  </action>
+  <action name="ImportFromCsv_action">
+   <property name="text">
+    <string>Import from .csv</string>
+   </property>
+  </action>
+  <action name="Refresh_action">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+F</string>
+   </property>
+  </action>
+  <action name="DeleteRecords_action">
+   <property name="text">
+    <string>Delete records...</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QWidget</extends>
+   <header>pyqtgraph</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>TitleLineEdit</tabstop>
+  <tabstop>DateEdit</tabstop>
+  <tabstop>CurrencyLineEdit</tabstop>
+  <tabstop>AmountLineEdit</tabstop>
+  <tabstop>PaymentModeLineEdit</tabstop>
+  <tabstop>DescriptionPlainTextEdit</tabstop>
+  <tabstop>SubmitPushButton</tabstop>
+  <tabstop>ResetPushButton</tabstop>
+  <tabstop>DatabaseTableView</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Expense Tracker Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
